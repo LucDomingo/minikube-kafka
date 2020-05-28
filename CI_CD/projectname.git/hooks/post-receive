@@ -1,0 +1,6 @@
+#!/bin/bash
+while read oldrev newrev refname
+do
+  echo "fetch Jenkins"
+  curl http://localhost:8080/git/notifyCommit?url=git@10.0.2.15:/home/git/projectname
+done
