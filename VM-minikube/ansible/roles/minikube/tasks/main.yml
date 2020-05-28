@@ -1,0 +1,103 @@
+---
+- name: Installation yum utils
+  yum:
+    name: yum-utils
+    state: latest
+
+- name: Installation conntrack
+  yum:
+    name: conntrack-tools
+    state: latest
+
+- name: Installation device-mapper-persistent-data
+  yum:
+    name: device-mapper-persistent-data
+    state: latest
+
+- name: Installation lvm2
+  yum:
+    name: lvm2
+    state: latest
+
+- name: Installation git
+  yum:
+    name: git
+    state: latest
+
+- name: Ajout Docker repo
+  get_url:
+    url: https://download.docker.com/linux/centos/docker-ce.repo
+    dest: /etc/yum.repos.d/docker-ce.repo
+  become: yes
+
+- name: Enable Docker Edge repo
+  ini_file:
+    dest: /etc/yum.repos.d/docker-ce.repo
+    section: 'docker-ce-edge'
+    option: enabled
+    value: 0
+  become: yes
+
+- name: Enable Docker Test repo
+  ini_file:
+    dest: /etc/yum.repos.d/docker-ce.repo
+    section: 'docker-ce-test'
+    option: enabled
+    value: 0
+  become: yes
+
+- name: Installation Docker
+  package:
+    name: docker-ce
+    state: latest
+  become: yes
+
+# - name: Kubernenetes repertoire
+#   copy:
+#     src: kubernetes.repo
+#     dest: /etc/yum.repos.d/kubernetes.repo
+#
+# - name: Instalation kubectl
+#   yum:
+#     name: kubectl
+- name: Demarrage Docker service
+  service:
+    name: docker
+    state: started
+    enabled: yes
+
+- name: Telechargement Minikube
+  get_url:
+    url: "https://storage.googleapis.com/minikube/releases/{{ minikube_version }}/minikube-linux-amd64"
+    dest: /usr/local/bin/minikube
+    mode: 0755
+
+- name: Instanciation du cluster
+  shell:
+    cmd: /usr/local/bin/minikube start --vm-driver=none --v=7
+
+  become: yes
+- name: Copie du script d'installation d'Apache Kafka
+  copy:
+    src: ./scripts/installationKafka.sh
+    dest: /home/vagrant
+    mode: '775'
+
+- name: Installation Kafka
+  shell: /home/vagrant/installationKafka.sh
+
+- name: Recuperation image Docker utilise (Jenkins,..).
+  shell:
+    cmd: docker pull jenkins:latest
+
+- name: yum update
+  shell:
+    cmd: yum -y update
+
+- name: Installation Gnome-desktop
+  shell:
+    cmd: yum -y groups install "GNOME Desktop"
+
+- name: Demarrage serveur graphique
+  shell:
+    cmd : startx
