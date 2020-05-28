@@ -1,0 +1,19 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2020-05-04 21:39:27.550 UTC</timestamp>
+  <md5sum>35102b6f1ac78f3eed85c4c39e71d4db</md5sum>
+  <fileName>Credential id=2678572b-3fcb-422a-98a3-8c28142e71d2 name=jenkins (git_ssh)</fileName>
+  <usages>
+    <entry>
+      <string>exsa_sysbas_kubernetes</string>
+      <ranges>2-5,8</ranges>
+    </entry>
+  </usages>
+  <facets>
+    <com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet plugin="credentials@2.3.7">
+      <timestamp>1588669798093</timestamp>
+      <itemFullName>exsa_sysbas_kubernetes</itemFullName>
+      <timestamp0>1588667608225</timestamp0>
+    </com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet>
+  </facets>
+</fingerprint>

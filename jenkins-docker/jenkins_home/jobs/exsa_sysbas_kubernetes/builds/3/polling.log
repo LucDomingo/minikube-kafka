@@ -1,0 +1,11 @@
+Started on May 4, 2020 10:01:16 PM
+Using strategy: Default
+[poll] Last Built Revision: Revision e6bb02b8427a75c729842fdadf547edd85e51020 (refs/remotes/origin/master)
+using credential 2678572b-3fcb-422a-98a3-8c28142e71d2
+ > git --version # timeout=10
+using GIT_SSH to set credentials git_ssh
+ > git ls-remote -h -- git@10.0.2.15:/home/git/projectname.git # timeout=10
+Found 1 remote heads on git@10.0.2.15:/home/git/projectname.git
+[poll] Latest remote head revision on refs/heads/master is: 48b852c1403180e951a962fa29bc4619763978bd
+Done. Took 0.83 sec
+Changes found
