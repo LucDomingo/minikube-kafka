@@ -1,0 +1,305 @@
+Started by an SCM change
+Obtained Jenkinsfile from git git@10.0.2.15:/home/git/projectname.git
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4B0qdNN+6kyiumQY4wsTEKcrsWujIivUd+s+HXqmggviAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4AlEiZCotQs9t8one//DNtjPOYrRX1JuAPoYGRmy8suaAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] stage
+[8mha:////4EyrXXMO+i+RURyd0OXMggbahQmDywaZtcHg9zdj6MdqAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] { (Formatage du code Astyle)
+[8mha:////4JpofCvaycLtxE+D6oPy09BVIbmFZpF3DRpuHo2S6JePAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] node
+Running on [8mha:////4JlIgWVCVDIDYVV3f7eAq3sEwYcyHhMo6QtEdeC2AfGIAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /var/jenkins_home/jobs/exsa_sysbas_kubernetes/workspace
+[8mha:////4NjayUvXC+p4UU7KyCEY6y96m/qKY4aALVYFINeB4IGOAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] {
+[8mha:////4DDkES654pOLG1BQogeQX/mK8aTIkEB3iNciOmLrLw6AAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] checkout
+using credential 2678572b-3fcb-422a-98a3-8c28142e71d2
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@10.0.2.15:/home/git/projectname.git # timeout=10
+Fetching upstream changes from git@10.0.2.15:/home/git/projectname.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials git_ssh
+ > git fetch --tags --progress -- git@10.0.2.15:/home/git/projectname.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision ccbf91d8c7cc766d1f812d0656c13855c70f3fd9 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f ccbf91d8c7cc766d1f812d0656c13855c70f3fd9 # timeout=10
+Commit message: "v3"
+ > git rev-list --no-walk f16264ce8a90fcee2a7110163a23cef25a9fd8d9 # timeout=10
+[8mha:////4OoA0gZvoDEvMqgNilQtDUmkbBxOaG3R26QekrOhihuWAAAApR+LCAAAAAAAAP9tjUEKwjAURH8qXbh16SHSnQjiym3IxhPEJMa04f82SW1XnsireQejBVcODMwMDO/5gjpFOFJ0vLXYeUza8z6MriQ+UeyugSbe0oVrwkTBcmknScaeliopW1jEKlgJWFvUgZJHl2EjWnVXTVDomnOOZTsIqLwZ4AFMFHJWMX/LHGF7G00i/HH+AmDuM7Bd8f7zq9/XNDXAwAAAAA==[0m[Pipeline] withEnv
+[8mha:////4PWB3Jx4MCBHVc7V8mnLTvJKcynL+NBofEX9+ZfwwZ0IAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BSEm1igLJwhJCGmj/9skpZ04EVfjDgQqMWHJkm3Jes8X1CnCkaLjrcXOY9Ke92F0JfGJYncNNPGWLlwTJgqWSztJMva0VEnZwiJWwUrA2qIOlDy6DBvRqrtqgkLXnHMs20FA5c0AD2CikLOK+VvmCNvbaBLhj/MXAHOfge2K959f/QbB16AVwAAAAA==[0m[Pipeline] {
+[8mha:////4EFwCmCOH4D41qn5N5hulxtx0cPdl5U+IMApB9zFRSpBAAAAoh+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKBEiEqWisNLzCJMU6su2BfSCpexNf4AxGRqNhqZ5p5vbFMEUeOTjWWWk+p8qoLvZueGji218CDaviiKqbEwarSDiXX9jRjyWIxL8ux0FhZqgInT06w1o15mCIYcsVZ4uQOGrmv73gi01NZTJQvjBGbW18npl/nbwBjJ8j2gny37T6VOYoyvQAAAA==[0m[Pipeline] isUnix
+[8mha:////4MjEAxM77DCZYDWYnsjJs+KUYvq6G1MDYlTs5eQhVm48AAAAoh+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6KE0Rgn14bFL6hQa6F5D9uHMPlF/pr/IJHEyTvdc5bzemOdIo4cnWotdZ5S7VUfBjc/NXLsroFH1fJF1UyJg1WVHStu7GnBisViWZZjpbGxVAdOnpxgq1vzMEUw5IqzxNkdNHLf3PFEpueymChfmCJ2t6FJTL/O3wCmXpDtBXlZ9h/UCJErvQAAAA==[0m[Pipeline] sh
++ docker inspect -f . ldomingo/astyle
+.
+[8mha:////4ECTCkvw5yhf11YFQlsBZYAo8pQrmYF85uQNaDehVZ81AAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQj6BCiorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2Gw/x/INugh218EAAAA=[0m[Pipeline] withDockerContainer
+Jenkins seems to be running inside container c0c996dc18de03337deac717dfda674112838ec202a951a47cf08978b7637995
+$ docker run -t -d -u 0:0 -w /var/jenkins_home/jobs/exsa_sysbas_kubernetes/workspace --volumes-from c0c996dc18de03337deac717dfda674112838ec202a951a47cf08978b7637995 -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** ldomingo/astyle cat
+$ docker top ff75ae7243dd5044337492a299904d2352c8cc77e4d70679965348fad1064224 -eo pid,comm
+[8mha:////4DgC8QlvjbhaECzOtZKVCfe1sxxK03tDnt0GTxH5tIDoAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+y7kUycIAAAA=[0m[Pipeline] {
+[8mha:////4IIuPojDF4fWwgP1nGfk2O6uCaokkkDZdWOEkKJGNJQVAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBgq0rvS+AAAA[0m[Pipeline] sh
++ echo OK
+OK
+[8mha:////4FusscU92T8nxGM5IJspwCjnv4Ls57tJLjr9JkeHmjQMAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N7BnLt++AAAA[0m[Pipeline] }
+$ docker stop --time=1 ff75ae7243dd5044337492a299904d2352c8cc77e4d70679965348fad1064224
+$ docker rm -f ff75ae7243dd5044337492a299904d2352c8cc77e4d70679965348fad1064224
+[8mha:////4HoTRhfhikZC2PRArMGjJry4I9W8kV5QITJUXxn5iCrCAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiKGgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N4glvS6+AAAA[0m[Pipeline] // withDockerContainer
+[8mha:////4LrgLXw4dzj3DHmv/neTDDahmEe29oWUwi3xZOWgpzf6AAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRFUKIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsTZPsPKIvUHr0AAAA=[0m[Pipeline] }
+[8mha:////4PSHQgrAy00nWuwAneWfzvW6mC6bVikOPqzzxaOmJEW3AAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6LEjcQ4uTYsfkGFWgvNe9g+hMkv8tf8B4kkTt7pnrOc1xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0g35eCrPwAbyyD670AAAA=[0m[Pipeline] // withEnv
+[8mha:////4LxZTtHN5+lEe7V9mH6kbZgKNGk3QVmqVrtiS6OPDplPAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRDRJCVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5Nu9INt9ANgoWzG9AAAA[0m[Pipeline] }
+[8mha:////4GpA1WaZm24oF6Jup7AMQLkw9A0h4FIu7eeV3aTSzSUlAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMJBSFSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLcVZPsPvWnWI70AAAA=[0m[Pipeline] // node
+[8mha:////4B+efiuw9gVcGCJ0hoT0ltm4R6mOC8OGkGuJmFmODis5AAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRiA5R0VppeIFJjHFi3QX7QlLxIr7GH4iIRMVWO9PM641lijhydKqx1HpKlVdd6N301MCxvQYeVMMXVTElDlaVdii5tqcZSxaLeVmOhcbKUhU4eXKCtW7MwxTBkCvOEid30Mh9fccTmZ7KYqJ8YYzY3Po6Mf06fwMYu06Q77aCbP8Bm3Cxab0AAAA=[0m[Pipeline] }
+[8mha:////4L+Z+WSE3gXBPeicTZhdsH9hPdFQ7zKZh6z9DELYV6f5AAAAoh+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkOBon14bFL6hQa6F5D9uHMPlF/pr/IJHEyTvdc5bzemOdIo4cnWotdZ5S7VUfBjc/NXLsroFH1fJF1UyJg1WVHStu7GnBisViWZZjpbGxVAdOnpxgq1vzMEUw5IqzxNkdNHLf3PFEpueymChfmCJ2t6FJTL/O3wCmvhfkZSnI9h/on3WwvQAAAA==[0m[Pipeline] // stage
+[8mha:////4L+s+ZiXLa85+junKpSsBNMI59IYkye5J7HXjkPj6GjyAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BKWgpeYQjhRJR0VpueIGJjXFi3QX7QlLxIr7GHzBEomKrnZVW83xBlSIcKDrRWew9ptaLIYwuNzFR7C+BJtHRWbSEiYIVyk6KjD0uqIgtLClKWElYW2wDJY+OYSM7fdd10OjqE8e87SWU3tzgAYXMZtaRvzBH2F5Hkwh/nr8CmAeGomEom93nWL0BxkbjDsEAAAA=[0m[Pipeline] stage
+[8mha:////4FQ87R//8Zawvva5h3HBV9jpWz/sb2MyZRNePL7mudazAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUAjbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAd6e6VPCAAAA[0m[Pipeline] { (Linter c++)
+[8mha:////4Phy/fbGo34HtiewEbcPLymHIexR+YLeDk0WgC/W2ewWAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUQjAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD/hYjrHCAAAA[0m[Pipeline] node
+Running on [8mha:////4JlIgWVCVDIDYVV3f7eAq3sEwYcyHhMo6QtEdeC2AfGIAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /var/jenkins_home/jobs/exsa_sysbas_kubernetes/workspace
+[8mha:////4HhYt60+9K1XHroTjw2KJBH9UjeNq85LEzIhMhwFYqPmAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUQoIFMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfACW9ZT2wgAAAA==[0m[Pipeline] {
+[8mha:////4IsAeJEN/UI2CqhySXFxH27gqLwme1Wr9l5J6YTFuO1NAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiUUCBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAHUcXIBvgAAAA==[0m[Pipeline] checkout
+using credential 2678572b-3fcb-422a-98a3-8c28142e71d2
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@10.0.2.15:/home/git/projectname.git # timeout=10
+Fetching upstream changes from git@10.0.2.15:/home/git/projectname.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials git_ssh
+ > git fetch --tags --progress -- git@10.0.2.15:/home/git/projectname.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision ccbf91d8c7cc766d1f812d0656c13855c70f3fd9 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f ccbf91d8c7cc766d1f812d0656c13855c70f3fd9 # timeout=10
+Commit message: "v3"
+[8mha:////4AtLpOwBvmHm+JgkVV+yBdsR/scnHFhDE9By08TQ3EYZAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYkBIiKlrlIUThCaEtNH/5SelnTgRV+MOtFRiwoNlW7Le6w1FZDgRO9FYbD3G2osu9G5KYiBur4EG0dBF1ISRghXKDoqMrZaqKFlYlOWwkrC2WAeKHl2CjWz0Q5dBoyvPiaftKCH35g5PyORETprTt4wM21tvIuGP8xcAY5cg3+1nO8zP4gPn8nxVwgAAAA==[0m[Pipeline] withEnv
+[8mha:////4J9YfdG4QFHKhdR1qphvMEdoY/PxD/0nxVNFv7zNaukxAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYgIhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0QKVszCAAAA[0m[Pipeline] {
+[8mha:////4B4EGCig0ZeoJj24mxyWuxa13kDnMtOj9DfHm52tSaStAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCoEIoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDREKHeHXPvt8AHN/bm5vgAAAA==[0m[Pipeline] isUnix
+[8mha:////4IRYx8ZnUTht//lFStTAfYvjYuWdppDqDZC+zr1xiWq0AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioEIoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDREKHeHXPvt8AGMzKKgvgAAAA==[0m[Pipeline] sh
++ docker inspect -f . ldomingo/cpplint
+.
+[8mha:////4DTJerxaeVLRJS2GWzhYHrjmZZWj5IjEAFZ/qaaXgXJdAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUKhNCTF2jLpwgNCEkjf4vSUo6cSKuxh0IVGLCg2Vbst7zBVXwcCSvmVU4GAy9YaObdE4skR8ujhKzdGY9YSCnWKdSR1K1S+0oKlhUlLDisFbYOwoGdYQNt+IuaidQ16fo83bgUBp5gwcUPJOj8PFbZg/b6yQD4Y/zFwDzGKFs9tl2zedZvQHzLmjBwgAAAA==[0m[Pipeline] withDockerContainer
+Jenkins seems to be running inside container c0c996dc18de03337deac717dfda674112838ec202a951a47cf08978b7637995
+$ docker run -t -d -u 0:0 -w /var/jenkins_home/jobs/exsa_sysbas_kubernetes/workspace --volumes-from c0c996dc18de03337deac717dfda674112838ec202a951a47cf08978b7637995 -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** ldomingo/cpplint cat
+$ docker top a191c7d38ff3fdff7947a22b673bec939816c6fa74ccf88141b7bab74f9633b1 -eo pid,comm
+[8mha:////4OhdYHU9wjgtSQ9NgxTPV64ZFugEpn8sxTvcWZ0XC+2wAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycohUoiNiYo26cILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMYAJwqGO42dxdha3vvRzIlnCt3NU+aOrrwljOQ1b3RuSOnzWhtKGlYVDDYCthpbT9GiSbATTj5k5SWa6pLCvB0FMKsGeEIhZnKSIX3LFGB/H1Uk/HH+AmDqE7D6sFi9PMsPfTawssIAAAA=[0m[Pipeline] {
+[8mha:////4G6KDL0Pjh9Na0hRVn+N21llpWPIuWMj09A6cOC9NL2jAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeghSxM6xsmVoPAEmiBDmfwJEUnkir+YdRDNj5RY7+7Z5zxesY4AjBc2swsFg7AzzbtJlsUxhuDrKzNKFdYSRnGJCZUG9Oi0oKClYUtWw4rBR2DmKBnWCLbfyLhsnUTfnFMp34FCbfoQHVLyYkwzpC3OA3W3qI+HP81cAs09Qt+2n9v4NGWcPtb4AAAA=[0m[Pipeline] sh
++ echo OK
+OK
+[8mha:////4LY+uxfLjnDPvMq887d8WP6JOy6OsIHD7/DoIIqa2PcCAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeghSZKwcK1uGxhNggghh/idAJJUn8mreQTQzVm6xs2+b93zBOgY4UtDMKhwMxs4w7yZdFssUhqujzCxdWEcYySkmVBbUq9OCgpKCJVUNKw4bhZ2jaFAn2HIr77JxEnVzTqF8Bw616Ud4QMWLOcmQvjAH2N2mPhL+PH8FMHufoG73n2rfGxSHer4AAAA=[0m[Pipeline] }
+$ docker stop --time=1 a191c7d38ff3fdff7947a22b673bec939816c6fa74ccf88141b7bab74f9633b1
+$ docker rm -f a191c7d38ff3fdff7947a22b673bec939816c6fa74ccf88141b7bab74f9633b1
+[8mha:////4MqWMNHtZVCm4bFvFUEjAl5T8O+Yf3Gn3sD4ardAR3hgAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIigUSDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDu9p/avgEjVhSLvgAAAA==[0m[Pipeline] // withDockerContainer
+[8mha:////4GKXxq1ASHzijXj5zSL0ggwQer2CZPzVHEfEVny96JwTAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiQYEQSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryt8+1PXwAT22Bzr4AAAA=[0m[Pipeline] }
+[8mha:////4Nf5Uv1c3yW/o33myyq96xe+8GG5flTfCg7hsFJQA/KqAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiQRMJUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkF5qHPt6w8M79BIvgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4C5ykYOTbHRfQ93IucH+Xc45EPU9MFMOxbynuy4mPNiSAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIigYSEUCpayw0vMIkxTqy7YDs4FS/ia/wBi0hUbLHa2WZeb1gGDzV7g52m3lJoLA5uNHlhYt9fHSfs+IINU2CnUeokudWnGSVHDXOKEhYCVpoax8GSibAWnXqoyiky1Tn6/B0FlLa9wxMKkc1R+fiFycPmNraB6ef5K4BpGCKUu0Ou7f4DrhE0ZL4AAAA=[0m[Pipeline] }
+[8mha:////4JvD20gDqG8eG9KYypkhaUftYqp3NDZj8kSXPKz/4u3AAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCEFQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ntfu8AFSL5UfvgAAAA==[0m[Pipeline] // node
+[8mha:////4DW3rlQH1G+ZHGSeUoCC+xnC3KzdWGYLtSuk7JEF/kGRAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiUDpEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BGW9z3WoP2HMzqO+AAAA[0m[Pipeline] }
+[8mha:////4BO0mZMB1De2UsGkV8TKlsYXSnkah/q49hStDEDDb4+pAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBTpEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BOWhzlXvP2wrPru+AAAA[0m[Pipeline] // stage
+[8mha:////4Jb6OzD8Vkxh4AeaEK16Trli7DqgwmomRjaY7GGLXnGcAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjAR2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxIah2G0/x/IN/HMzbcEAAAA=[0m[Pipeline] stage
+[8mha:////4EYz9+BJ5lKNpDkcS/rCiiuulg8dXZDZeA1Dkvp6kuZGAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoh0oBtiYo26cILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMYAJwqGO42dxdha3vvRzIlnCt3NU+aOrrwljOQ1b3RuSOnzWhtKGlYVDDYCthpbT9GiSbATTj5k5SWa6pLCvB0FMKsGeEIhZnKSIX3LFGB/H1Uk/HH+AmDqE7D6sFi9PMsPBA4E38IAAAA=[0m[Pipeline] { (Construction conteneur)
+[8mha:////4BOGeYOZoiqWneIYwH/RIQZLmgegwDcyxVA7k7BRYaDVAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0KRNiYo2ycILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMUAJwqGOY2dxdha1vvRzIllCt3NU2aOrqwljOQ1EzoLUvq8VkFJw6qihA2HrcbWU7RoEuy4kw9Ze4mmvqQwb0cOpVUDPKHgMznJkL5lCrC/jyoS/jh/ATD1CcqmWeywPKsPIshjPcIAAAA=[0m[Pipeline] node
+Running on [8mha:////4JlIgWVCVDIDYVV3f7eAq3sEwYcyHhMo6QtEdeC2AfGIAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /var/jenkins_home/jobs/exsa_sysbas_kubernetes/workspace
+[8mha:////4PJiIH13BjW3tWiKzqAkDbVyQHdKxIVZ7AlNglIyggxgAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0ARbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAUxleXrCAAAA[0m[Pipeline] {
+[8mha:////4PHRxIL3aykK9mth2Hy44Uq32CUoe7sh8pB6FnvuY98QAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSICgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN+EEkMO+AAAA[0m[Pipeline] checkout
+using credential 2678572b-3fcb-422a-98a3-8c28142e71d2
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@10.0.2.15:/home/git/projectname.git # timeout=10
+Fetching upstream changes from git@10.0.2.15:/home/git/projectname.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials git_ssh
+ > git fetch --tags --progress -- git@10.0.2.15:/home/git/projectname.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision ccbf91d8c7cc766d1f812d0656c13855c70f3fd9 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f ccbf91d8c7cc766d1f812d0656c13855c70f3fd9 # timeout=10
+Commit message: "v3"
+[8mha:////4E/ykNdd243kKMWhRb78rYhqGIHOepisXOK0Kmy6uTTgAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QQgJMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAA9YpHZwgAAAA==[0m[Pipeline] withEnv
+[8mha:////4KRZAZSSwU9CKCMKA2RDjNxn4z8CNKaAGUx+NBMAP0PCAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0YQAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD56au0DCAAAA[0m[Pipeline] {
+[8mha:////4NvjqZgFv9AHlqFPcfdjV/jkKIKwK472EEjlm9d5Y1wMAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCAQVCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKYhQrk75Npvhw/4iFt7vgAAAA==[0m[Pipeline] isUnix
+[8mha:////4JvHqeKM1r+uq37HeiJWx+IJpxorBnedD5p4NyqVb8EuAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJCgQSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANEcrdIdd+O3wAublAYr4AAAA=[0m[Pipeline] readFile
+[8mha:////4NJQwMNskWgIuetiJV2hhG0bLU6JOL/fL1Y/hDy64ERnAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiISgQSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANEcrdIdd+O3wAeuptSb4AAAA=[0m[Pipeline] sh
++ git describe --tag
++ git describe --tag
++ docker build -t 3b6df04d5fe99a31893cadacad72060e584e1c0f -t trow.kube-public:31000/back:v3-11-gccbf91d --build-arg version=v3-11-gccbf91d -f ./Dockerfile .
+Sending build context to Docker daemon  152.6kB
+Step 1/9 : FROM node:latest
+ ---> a511eb5c14ec
+Step 2/9 : ARG version
+ ---> Using cache
+ ---> e0ecf3dbd274
+Step 3/9 : RUN echo $version
+ ---> Running in af19abfe7d24
+v3-11-gccbf91d
+Removing intermediate container af19abfe7d24
+ ---> 3b0eb4b9d73b
+Step 4/9 : ENV VERSION $version
+ ---> Running in 723095a44f86
+Removing intermediate container 723095a44f86
+ ---> 8f7f621bfcff
+Step 5/9 : RUN npm init -y
+ ---> Running in c2b0c0c882be
+Wrote to /package.json:
+
+{
+  "name": "",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+
+Removing intermediate container c2b0c0c882be
+ ---> ac8550aa169e
+Step 6/9 : RUN npm install express
+ ---> Running in 2a729baa324b
+[91mnpm notice created a lockfile as package-lock.json. You should commit this file.
+[0m[91mnpm WARN[0m[91m @1.0.0 No description
+npm WARN @1.0.0 No repository field.
+[0m[91m
+[0m+ express@4.17.1
+added 50 packages from 37 contributors and audited 50 packages in 7.031s
+found 0 vulnerabilities
+
+Removing intermediate container 2a729baa324b
+ ---> bc02c9e0997c
+Step 7/9 : EXPOSE 3000
+ ---> Running in 086847ea5002
+Removing intermediate container 086847ea5002
+ ---> c3412b00af07
+Step 8/9 : COPY serveur.js serveur.js
+ ---> 1800ee67cc88
+Step 9/9 : CMD node serveur.js
+ ---> Running in 89a4830a6101
+Removing intermediate container 89a4830a6101
+ ---> 9b1b4d13e15e
+Successfully built 9b1b4d13e15e
+Successfully tagged 3b6df04d5fe99a31893cadacad72060e584e1c0f:latest
+Successfully tagged trow.kube-public:31000/back:v3-11-gccbf91d
+[8mha:////4Ddu+/aqtiaTx/k6iBsslDttl74+XRNyUc0fCbl1LwScAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSAAVCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKYhQrk75Npvhw8723ZQvgAAAA==[0m[Pipeline] isUnix
+[8mha:////4KaE5mEvhIDuy5vTGNEmsDXUxJHNePbpLGcDFgWiqTd+AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLShAIhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAcw+QVkfcu1r/wH8TTcfvgAAAA==[0m[Pipeline] sh
++ docker inspect -f . 3b6df04d5fe99a31893cadacad72060e584e1c0f
+.
+[8mha:////4DdeSBuf1eSnCIyD8Gc1Uu8CmXoMksl743CMs3DVnJCmAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0oQNCTF2jLJwgJCGkjf4vSUo7cSKuxh0IVGLCg2Vbst7zBVUMcKRgWWewdxiVY4MfbU5sotBfPE2sozNThJG8YcJMgrRplyooGVhUlLDisDaoPEWHNsGGd/Iuay/R1qcU8nbgUDp9gwcUPJOTDOlb5gDb66gj4Y/zFwDzkKDc7bM1zedZvQGRjoBQwgAAAA==[0m[Pipeline] withDockerContainer
+Jenkins seems to be running inside container c0c996dc18de03337deac717dfda674112838ec202a951a47cf08978b7637995
+$ docker run -t -d -u 0:0 -w /var/jenkins_home/jobs/exsa_sysbas_kubernetes/workspace --volumes-from c0c996dc18de03337deac717dfda674112838ec202a951a47cf08978b7637995 -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** 3b6df04d5fe99a31893cadacad72060e584e1c0f cat
+$ docker top 26cffe16cf258ff93bf985597990ed1c40f252c197ee80eb2c04b102b55376eb -eo pid,comm
+[8mha:////4NyqzRAiNoEuFJb300lvRcct73gO00OQakIwXltyFatnAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0KgtiYo2ycILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMUAJwqGOY2dxdha1vvRzIllCt3NU2aOrqwljOQ1EzoLUvq8VkFJw6qihA2HrcbWU7RoEuy4kw9Ze4mmvqQwb0cOpVUDPKHgMznJkL5lCrC/jyoS/jh/ATD1CcqmWeywPKsPlyKrR8IAAAA=[0m[Pipeline] {
+[8mha:////4D8WeYXsTuI1hIanuFWX/jYU/on64+fVzghbSJwNXH7QAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSAQWiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBkhu+A6+AAAA[0m[Pipeline] sh
++ echo Construction Conteneur ... OK
+Construction Conteneur ... OK
+[8mha:////4NHV1YHFuNCYk3rlOVEMHNoIriENWUSng7Syc40aBWdYAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSgZAQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N/Zh+YO+AAAA[0m[Pipeline] }
+$ docker stop --time=1 26cffe16cf258ff93bf985597990ed1c40f252c197ee80eb2c04b102b55376eb
+$ docker rm -f 26cffe16cf258ff93bf985597990ed1c40f252c197ee80eb2c04b102b55376eb
+[8mha:////4NzGJ6fmZAWRduxLqYrE6D5CSPVl8BkQRdUVuAZ1OqMbAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeghSpXAcK1uGxhNggghh/idAJJUn8mreQTQzVm6xs2+b93zBOgY4UtDMKhwMxs4w7yZdFssUhqujzCxdWEcYySkmVBbUq9OCgpKCJVUNKw4bhZ2jaFAn2HIr77JxEnVzTqF8Bw616Ud4QMWLOcmQvjAH2N2mPhL+PH8FMHufoG73n2rf6eOs0b4AAAA=[0m[Pipeline] // withDockerContainer
+[8mha:////4IddIAlHjcwjsS4yJEjZ55RhwBqNPQ+RIWlOz8iWKFk+AAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCgZAQSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryv821O3wA1tXm174AAAA=[0m[Pipeline] }
+[8mha:////4ILjTFa6+h2DGe0i+A8gXRuQopq7h8GF5Y6Znzlx2WLMAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJISQUCpayw0vMIkxTqy7YDs4FS/ia/wBi0hUbLHa2WZeb1gGDzV7g52m3lJoLA5uNHlhYt9fHSfs+IINU2CnUeokudWnGSVHDXOKEhYCVpoax8GSibAWnXqoyiky1Tn6/B0FlLa9wxMKkc1R+fiFycPmNraB6ef5K4BpGCKU+22u3eED5Ta9a74AAAA=[0m[Pipeline] // withEnv
+[8mha:////4DLLR8LLLnW2t31OHZ2hv4HP+MW1Y2pWKv+ijJkOlIhWAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIZQGUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkFZ73Md6g9MaZEKvgAAAA==[0m[Pipeline] }
+[8mha:////4Hnp/2hJLhReP9FZv7RfYpuP6ZhtzLPqe0YlSoXb0MP4AAAApR+LCAAAAAAAAP9tjTsOwjAQRDdBFLSUHGJT8GlQKlrLDScwiTFOrN1gOzgVJ+Jq3AGLSFRMMZo3zXu9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFAetrl2+w9T68RYvgAAAA==[0m[Pipeline] // node
+[8mha:////4FS091y7lOSQ55GL/u3f5FOT6UiexXOtTBtDIQLoUweiAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMJpIhpERWu54QUmMcaOdWfsC0nFi/gaf8AiEhVbrHa2mdcb1jnBkZIV3uDgMHdOxDDassREabgGmoSni+gIMwUjlJkU9ea0oCI2sKSqYSVhY7ALlB1ahq30+qGboNE2Z07lO0ioXX+HJ1SymFkn/sKcYHcb+0z48/wVwBwjQ71vS7XtB33rxjK+AAAA[0m[Pipeline] }
+[8mha:////4HYltP+gjD+1GFG7xsKwqU0qFbr/MofWOMDlq0taiMF1AAAApR+LCAAAAAAAAP9tjTsOwjAQRDdBFLSUHGJT8GlQKlrLDScwiTFOrN1gOzgVJ+Jq3AGLSFRMMZo3zXu9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFAe9rl22w97rf5nvgAAAA==[0m[Pipeline] // stage
+[8mha:////4ECyp+RW6XJ0Jul4KqORm2ARDe1n5Vu3YPyfr7L4Si+cAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjUaRBVLSWG15gEmOcWHfBvpBUvIiv8QcMkajYamel1TxfUKYIB4pOdhZ7j6nxcgijy01OFPtLoEl2dJYNYaJgpbaTptYeF9TEFpaIAlYK1habQMmjY9ioztxNFQy66sQxb3sFhW9v8AChsplN5C/MEbbXsU2EP89fAcwDg9gxFHX9OZZvZvNhqsEAAAA=[0m[Pipeline] stage
+[8mha:////4N9vYlX4g5l4IECU0YifPSGWNob9f9qgYtHG5ETz9OBPAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0KwNiYo2ycILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMUAJwqGOY2dxdha1vvRzIllCt3NU2aOrqwljOQ1EzoLUvq8VkFJw6qihA2HrcbWU7RoEuy4kw9Ze4mmvqQwb0cOpVUDPKHgMznJkL5lCrC/jyoS/jh/ATD1CcqmWeywPKsPXl9jU8IAAAA=[0m[Pipeline] { (Upload image  sur Trow)
+[8mha:////4Dei+reiarPEDAMtqIDVdOogMnqzgnXR2Kvc1M+PbAwZAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0AyTE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAUsyu2PCAAAA[0m[Pipeline] node
+Running on [8mha:////4JlIgWVCVDIDYVV3f7eAq3sEwYcyHhMo6QtEdeC2AfGIAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /var/jenkins_home/jobs/exsa_sysbas_kubernetes/workspace
+[8mha:////4CVGEV+CJrbTY2oERrQHfEQFWqigoaljDTlfnDs+ZukMAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QyDE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxASgVHzvCAAAA[0m[Pipeline] {
+[8mha:////4DA0I/sI7AR1iMAI+M0OxGombrBVA18EX4FXQLJNLFodAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCBUIoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDREKHeHXPvt8AHrW/o6vgAAAA==[0m[Pipeline] checkout
+using credential 2678572b-3fcb-422a-98a3-8c28142e71d2
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@10.0.2.15:/home/git/projectname.git # timeout=10
+Fetching upstream changes from git@10.0.2.15:/home/git/projectname.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials git_ssh
+ > git fetch --tags --progress -- git@10.0.2.15:/home/git/projectname.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision ccbf91d8c7cc766d1f812d0656c13855c70f3fd9 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f ccbf91d8c7cc766d1f812d0656c13855c70f3fd9 # timeout=10
+Commit message: "v3"
+[8mha:////4KwjeEco7Kc9VvdIfKHqognrBM7kafNYV1x1Ud5oVg+/AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohULCCEOrFGXThBaEJIGv1fkpR04kRcjTsQqMSEB8u2ZL3nC6rgoSGvmVXYGwydYYMbdU4ske8vjhKzdGYdYSCnWKtSS1Id59pSVDCrKGHBYamwcxQM6ggrbsVd1E6grk/R5+3AoTTyBg8oeCZH4eO3TB7W11EGwh/nLwCmIUK53WfbbT7P6g0xQ7WwwgAAAA==[0m[Pipeline] withEnv
+[8mha:////4FJSmGpTbzVhFfPgaf1zfGtBCzghPb/PE+qmJtht0gSvAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUsDAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYL8sJttPz+LD7WcRxfCAAAA[0m[Pipeline] {
+[8mha:////4N/2Xd80yrw+iTODmRhDCKEDv+ks30vfgGIwiu57s9bZAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiQUGBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK//dQuvAFMXHrfvgAAAA==[0m[Pipeline] sh
++ git describe --tag
++ docker push trow.kube-public:31000/back:v3-11-gccbf91d
+The push refers to repository [trow.kube-public:31000/back]
+e3b80fd6fbc5: Preparing
+f54fa0433378: Preparing
+493c0830ff6a: Preparing
+02a318dedbea: Preparing
+7972420bc26e: Preparing
+17c76043bf23: Preparing
+496d6557f1e3: Preparing
+867786449541: Preparing
+92d17ee6d9da: Preparing
+e54368741774: Preparing
+5a6c4d956b5d: Preparing
+86ab2c6c5d58: Preparing
+496d6557f1e3: Waiting
+867786449541: Waiting
+92d17ee6d9da: Waiting
+e54368741774: Waiting
+5a6c4d956b5d: Waiting
+86ab2c6c5d58: Waiting
+17c76043bf23: Waiting
+e3b80fd6fbc5: Layer already exists
+02a318dedbea: Layer already exists
+7972420bc26e: Layer already exists
+496d6557f1e3: Layer already exists
+17c76043bf23: Layer already exists
+867786449541: Layer already exists
+92d17ee6d9da: Layer already exists
+5a6c4d956b5d: Layer already exists
+493c0830ff6a: Pushed
+e54368741774: Layer already exists
+86ab2c6c5d58: Layer already exists
+f54fa0433378: Pushed
+v3-11-gccbf91d: digest: sha256:22893de48ad566ae9b3fd792473318fe37261e69049f364a10949c45632fd936 size: 2565
+[8mha:////4PDke/Q26DKiG4Pd/csO1bz/DasBvJPE0iiHW5VXFCj6AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiISQKRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYQoZyv/vU9g0/Fv9WvgAAAA==[0m[Pipeline] }
+[8mha:////4Oc199VL8RNdRTchKAJDduC40xigs9+XQWmdXuINMFvvAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiCkSBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDud5/avgEglKoEvgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4HIk3OfT7pgBu3bcHf+XEssKzQ4eIsF/k6k6KSKnEZwzAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSBSFEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BOW+zlUfPv1f/pW+AAAA[0m[Pipeline] }
+[8mha:////4EPQReoZVgeOI3E/w/6Lhpb1qYcD17iAYFHq+wmeg+pKAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMLpCBKiSmul4QUmPowT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYMRPdJgKXZWeDeavMTEYbg6nkTPF9ExRXYoWpxa1tgs2HJCWFKUsJKwQeocR0smwVb26qEqp8hU5xTyd5RQWn2HJxQym5MK6QtzgN1t1JHp5/krgNn7BGVd59ofPs68pSm+AAAA[0m[Pipeline] // node
+[8mha:////4EpvJ/1bCw0eJVs6i4RViUgKwv4aJHzVBhFFHLUicR/HAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMLpCBKiSmul4QUmPowT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYMRPdJgKXZWeDeavMTEYbg6nkTPF9ExRXYoWpxa1tgs2HJCWFKUsJKwQeocR0smwVb26qEqp8hU5xTyd5RQWn2HJxQym5MK6QtzgN1t1JHp5/krgNn7BGV9yLWvP4oTTEi+AAAA[0m[Pipeline] }
+[8mha:////4AwgRgV52UAlf+j7oecIe32iSp95uJWlY7yWM4Z2HI/aAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSBSFEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BOX+kKuuP7nwF/S+AAAA[0m[Pipeline] // stage
+[8mha:////4OKvM4wk3n8vY61nFVKefm7M3D3VlVuD53bjr/3p1JW5AAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYSDqJAQFa3lhheY2Bgn1l2wLyQVL+Jr/IFAJCq22llpNc8XlDnBgZKXjcM2YK6D7GLvpyYHSu0l0iAbOsuaMFN0UrtBk3XHGTWxgzmigIWCpcM6Ug7oGVaqMXdTRYO+OnGatr2CItgbPECoycwm8RfGBOtrbzPhz/NXAGPHILYMxW7zOZZvJmsHLMEAAAA=[0m[Pipeline] stage
+[8mha:////4MOOkoYxUtR+rTlQV5/saJBN1awYkoFlHtlwCMfWCp7oAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUNiTE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxAUPegdTCAAAA[0m[Pipeline] { (Rollout)
+[8mha:////4H6+UrGwVLE88QMGgKIQMfU8XqZgAi+sWYq+4cjS3uGAAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUMCEhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYL8sJttPz+LDy1zm5PCAAAA[0m[Pipeline] node
+Running on [8mha:////4JlIgWVCVDIDYVV3f7eAq3sEwYcyHhMo6QtEdeC2AfGIAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /var/jenkins_home/jobs/exsa_sysbas_kubernetes/workspace
+[8mha:////4KLydxmyiG9RzEkW0JuSug5ztXMLCnWlkq1Lbmm+DO5mAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUggUJMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLkh91s+/lZfACJxiXBwgAAAA==[0m[Pipeline] {
+[8mha:////4Liwfe/yd9b6ZYd9SrZah2CdF9YzfSmv8wJfhyw0kneDAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSQIGEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK//dQuvAGulDDkvgAAAA==[0m[Pipeline] checkout
+using credential 2678572b-3fcb-422a-98a3-8c28142e71d2
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@10.0.2.15:/home/git/projectname.git # timeout=10
+Fetching upstream changes from git@10.0.2.15:/home/git/projectname.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials git_ssh
+ > git fetch --tags --progress -- git@10.0.2.15:/home/git/projectname.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision ccbf91d8c7cc766d1f812d0656c13855c70f3fd9 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f ccbf91d8c7cc766d1f812d0656c13855c70f3fd9 # timeout=10
+Commit message: "v3"
+[8mha:////4I1YpzGI6U/wYdSdqtqhXhiBvbB+LCJUw5Cq+TfCfsp2AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QEhIiKlrlIUThCaEtNH/5SelnTgRV+MOtFRiwoNlW7Le6w1FZDgRO9FYbD3G2osu9G5KYiBur4EG0dBF1ISRghXKDoqMrZaqKFlYlOWwkrC2WAeKHl2CjWz0Q5dBoyvPiaftKCH35g5PyORETprTt4wM21tvIuGP8xcAY5cgP+xm28/P4gNU+vLWwgAAAA==[0m[Pipeline] withEnv
+[8mha:////4PjgC6gUN6F3HLzrb2uDops+xMoHoeK/KR+G/3th7n57AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0AiEhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYL8sJttPz+LD7lC07jCAAAA[0m[Pipeline] {
+[8mha:////4EJ0ksa5YnwuITRIrXGJJ5QjeBT6hTg28dhhMgkChXK0AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSARKiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyv32U7vwBsroJZ2+AAAA[0m[Pipeline] sh
++ git describe --tag
++ kubectl set image deployment/back back=trow.kube-public:31000/back:v3-11-gccbf91d
+Error from server (NotFound): deployments.apps "back" not found
+[8mha:////4JzL/wtiSD2fLEcwOKa1jNY56mKoB9iO5YI8MXl2+RZrAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSoUiIitZKwwtMYowd686xHZyKF/E1/kAgEhVbrHa2mecL1jHAkYNGq6g3FFuD3o16Xpg59FfHGS1fsGWK7BQ2KjfcqdOCDScFS4oSVgI2ilrH0ZBOsBVW3mXlJOnqnML8HQSUphvgAYWYzUmG9IUpwO42dpHp5/krgMn7BGVdf2r/Bnt+gFe+AAAA[0m[Pipeline] }
+[8mha:////4M23HHONcLqcTdAq/7h6lOCzhQOYm5fDCE1ILEL5b6s6AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSIYEQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrd/lPbN2T81QW+AAAA[0m[Pipeline] // withEnv
+[8mha:////4A+2O7m9plnZM/zgGFzwzskNWwl3SjQOEizkROweqN5CAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCRANCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFAetrn2uw8tA85tvgAAAA==[0m[Pipeline] }
+[8mha:////4HADDOwjdth/xW8I3eQ6JDdPpoaSkecFTrvy6eCNizQGAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiqEAoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcrDNtd+9wEe4JXRvgAAAA==[0m[Pipeline] // node
+[8mha:////4NjrWEo1ZZzCUAsFuTwCsFjCDmTBEibXxkBowZfB/ogkAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiqEAoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcrDLtd++wEKwwjOvgAAAA==[0m[Pipeline] }
+[8mha:////4NUvVphmEUiJdOncNcPN4xO4YU77bynpExE+HaOIe/IQAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCRANCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFAedrn22w85IFNyvgAAAA==[0m[Pipeline] // stage
+[8mha:////4G6iqw44+K6PAYQ7BCrMKAWfv6Cmf5lvO2RQ/e3QdF4xAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKREA1CVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5PudINt+AB2q9SK9AAAA[0m[Pipeline] End of Pipeline
+ERROR: script returned exit code 1
+Finished: FAILURE
